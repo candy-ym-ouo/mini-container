@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>mini-container</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">mc</span><strong>mini-container</strong></div>
+    <nav>
+      <button class="nav active" data-view="dashboard">概览</button>
+      <button class="nav" data-view="containers">容器</button>
+      <button class="nav" data-view="images">镜像</button>
+      <button class="nav" data-view="import">导入镜像</button>
+    </nav>
+    <div id="connection" class="connection">正在连接</div>
+  </aside>
+  <main>
+    <header><div><p class="eyebrow">运行时控制台</p><h1 id="title">概览</h1></div><button id="refresh" class="icon-button" title="刷新" aria-label="刷新">&#8635;</button></header>
+    <section id="content" aria-live="polite"></section>
+  </main>
+  <dialog id="modal"><form method="dialog"><button class="close icon-button" aria-label="关闭" title="关闭">&#215;</button></form><div id="modal-body"></div></dialog>
+  <div id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
