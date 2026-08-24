@@ -1,0 +1,11 @@
+# Local runtime state
+state/
+
+# Local binaries and release archives
+bin/*
+dist/*
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
